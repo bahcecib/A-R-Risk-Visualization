@@ -1,5 +1,4 @@
 # Written by Berker Bahceci, October 2019
-# Sanofi CI2C Turkey
 # CRIF score visualization
 # Non-interactive
 
@@ -77,7 +76,7 @@ risk2 = risk.groupby('Bins').sum() #This should sum the risks for each bin.
 
 ax2.set_title('Risk distribution with respect to CRIF scores')
 ax2.set_xlabel('CRIF scores')
-ax2.set_ylabel('Total risk (in TRY)', color='black')  # we already handled the x-label with ax1
+ax2.set_ylabel('Total risk (in TRY)', color='black') 
 ax2.scatter(bin_x_centers, risk2, c='black', marker="X", s=100, alpha=0.5)
 ax2.tick_params(axis='y', labelcolor='black')
 ax2.ticklabel_format(style='plain')
@@ -94,7 +93,7 @@ ax2.plot(x_new, smooth)
 fig.tight_layout()
 plt.show()
 
-"""
+
 
 
 
